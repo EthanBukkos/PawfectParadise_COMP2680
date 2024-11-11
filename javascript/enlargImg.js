@@ -1,6 +1,7 @@
-img = document.getElementById("photo1")
-
-function enlargeImg() {
-    img.style.transform = "scale(1.5)";
-    img.style.transition = "transform 0.25s ease";
-}
+document.getElementById("photo1").addEventListener("click", function() {
+    if (this.style.transform == "scaled(2)") {
+        this.style.transform = "scale(1)";
+    } else {
+        this.style.transform = "scale(2)";
+    }
+});
