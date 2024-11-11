@@ -104,3 +104,7 @@ footer a {
     margin-left: 25em;
     height: auto;
 }
+
+img.enlarged {
+    transform: scale(2);
+}

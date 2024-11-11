@@ -1,7 +1,12 @@
-document.getElementById("photo1").addEventListener("click", function() {
-    if (this.style.transform == "scaled(2)") {
-        this.style.transform = "scale(1)";
-    } else {
-        this.style.transform = "scale(2)";
-    }
-});
+/* Script to enlarge images upon clicking them */
+document.addEventListener("DOMContentLoaded", function() { 
+
+    const images = document.querySelectorAll("img");
+
+    images.forEach(image => {
+        image.addEventListener("click", function() {
+            console.log("Image clicked");
+            this.classList.toggle("enlarged");
+        });
+    });
+}); 
