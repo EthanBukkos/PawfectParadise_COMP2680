@@ -1,8 +1,173 @@
-<!DocType html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community Stories</title>
+    <style>
+        body {
+			background-image: url('images/background.jpg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			font-size: 1.1em;
+		 }
+        .container {
+			width: 70%;
+			margin: 0 auto;
+			padding: 30px;
+			background-color: #E5AA70;
+			text-align: center;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			border-radius: 8px;
+			margin-top: 20px;
+		}
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #ddd;
+            margin: 20px 0;
+		}
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .text-body {
+            flex: 2;
+            padding: 20px;
+            text-align: left;
+        }
+        .image {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .image img {
+            max-width: 100%;
+            height: 400px;
+        }
+        .comments-container {
+            position: relative;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .comments-section {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 200px;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            display: none; /* Initially hidden */
+            z-index: 10;
+        }
+        .comments-section select,
+        .comments-section input {
+            display: block;
+            margin-top: 5px;
+            width: 100%;
+        }
+        
+        .show-comments-btn {
+            padding: 5px 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .show-comments-btn:hover {
+            background-color: #0056b3;
+        }
+        
+        .footer {
+		width: 100%;
+		background-color: #333;
+		color: white;
+		text-align: center;
+		padding: 25px 0;
+		font-size: 1.2em;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		margin: 0;
+		box-sizing: border-box;
+		}
+		
+        .footer a {
+		color: #aaa;
+		text-decoration: none;
+		margin: 0 20px;
+		}
+
+		.footer a:hover {
+		color: white;
+		}
+    </style>
 </head>
 <body>
+
+<div class="container">
+    <h1>Community Stories</h1>
+    <hr>
+    <div class="content">
+        <div class="text-body">
+            <p>I can hardly contain my excitement as I share that I just adopted the most amazing dog from Pawfect paradise! 
+            🐾❤️ After weeks of searching and countless hours spent browsing profiles, I finally found my perfect match—meet Boba, a playful 2-year-old Labrador mix!
+			From the moment I met her, I knew she was meant to be a part of my family. Her wagging tail and soulful eyes melted my heart instantly. 🥰 We spent some time
+			getting to know each other at the shelter, and it was clear that we had an instant connection.
+			Disney has already settled in beautifully at home. She loves her new toys, exploring the backyard, and snuggling up on the couch for movie nights. 🎬🐶 
+			I can’t believe how much joy she has brought into my life in such a short time!
+			I encourage anyone considering adoption to take the leap! There are so many wonderful animals waiting for their forever homes. 
+			Thank you to Pawfect Paradise for making this possible and for all the incredible work you do to help animals in need! 🏡💕</p>
+			Here’s to many adventures ahead with my new best friend! 🥳🐕✨ </p>
+        </div>
+        <div class="image">
+            <img src="images/boba.jpeg" alt="Puppy Image">
+        </div>
+    </div>
+
+    <!-- Button and Comments Dropdown -->
+    <div class="comments-container">
+        <button class="show-comments-btn" onclick="toggleComments()">Click to Show Comments</button>
+        <div class="comments-section" id="commentsSection">
+            <label for="comments">Comments</label>
+            <select id="comments">
+                <option>Comment 1</option>
+                <option>Comment 2</option>
+                <option>Comment 3</option>
+            </select>
+            <input type="text" placeholder="Add Comment">
+        </div>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<div class="footer">
+    <a href="#contact">Contact Us</a>
+    <a href="#about">About Us</a>
+</div>
+
+<script>
+    function toggleComments() {
+        const commentsSection = document.getElementById('commentsSection');
+        if (commentsSection.style.display === 'none' || commentsSection.style.display === '') {
+            commentsSection.style.display = 'block';
+        } else {
+            commentsSection.style.display = 'none';
+        }
+    }
+</script>
+
 </body>
 </html>
