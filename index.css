@@ -17,6 +17,8 @@ body {
         "text-body video video"
         "text-body photos photos"
         "footer footer footer";
+    font-family: Arial, sans-serif;
+    font-size: 1.1em;
 }
 
 /* grid-layout styles */
@@ -51,7 +53,16 @@ header {
 
 footer {
     grid-area: footer;
-    border: 1px solid black;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 1.2em;
+    position: fixed;
+    bottom: 0;
+	left: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 /* header styles */
@@ -61,10 +72,11 @@ header h1 {
     padding-top: .5em;
 }
 
-/* footer styles */
+/* footer anchor styles */
 footer a {
-    text-decoration: none;
-    padding: 1em;
+    color: #aaa;
+	text-decoration: none;
+	margin: 0 20px;
 }
 
 /* navigation list styles */
