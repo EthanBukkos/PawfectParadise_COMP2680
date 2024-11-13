@@ -19,6 +19,7 @@ body {
         "footer footer footer";
     font-family: Arial, sans-serif;
     font-size: 1.1em;
+    background-color: #E5AA70;
 }
 
 /* grid-layout styles */
@@ -30,7 +31,7 @@ header {
 
 .text-body {
     grid-area: text-body;
-    margin-top: 1em;
+    margin-top: 3em;
     margin-left: 15em;
     max-width: 800px;
     width: 100%;
@@ -41,7 +42,7 @@ header {
     grid-area: video;
     width: 100%;
     height: auto;
-    margin-top: 1em;
+    margin-top: 3em;
 }
 
 .photos {
@@ -98,4 +99,11 @@ header h1 {
 
 img.enlarged {
     transform: scale(2);
+}
+
+
+/* paragraph styles */
+p {
+    font-size: 1.8em;
+    font-family: Arial, sans-serif;
 }
