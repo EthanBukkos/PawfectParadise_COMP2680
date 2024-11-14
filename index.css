@@ -35,7 +35,7 @@ header {
     margin-left: 15em;
     max-width: 800px;
     width: 100%;
-    border: 1px solid black;
+    text-align: center;
 }
 
 .video {
@@ -73,6 +73,10 @@ header h1 {
 
 #navList a {
     text-decoration: none;
+}
+
+#navList a:hover {
+    color: white;
 }
 
 /* photo and video styles */
