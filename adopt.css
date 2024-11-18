@@ -40,8 +40,16 @@ header {
     grid-area: animal_col1;
 }
 
+#animal_col1 img {
+
+}
+
 #animal_col2 {
     grid-area: animal_col2;
+}
+
+#animal_col2 img {
+
 }
 
 #animal_col3 {
@@ -50,8 +58,31 @@ header {
 
 #animal_col4 {
     grid-area: animal_col4;
+    margin-top: 1em;
 }
 
 #animal_col5 {
     grid-area: animal_col5;
+    margin-top: 1em;
+}
+
+/* image styles */
+#animal_col1 img {
+    max-width: 100px;
+}
+
+#animal_col2 img {
+    max-width: 100px;
+}
+
+#animal_col3 img {
+    max-width: 100px;
+}
+
+#animal_col4 img {
+    max-width: 100px;
+}
+
+#animal_col5 img {
+    max-width: 100px;
 }
