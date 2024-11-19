@@ -32,7 +32,7 @@ header {
 }
 
 #filters {
-    margin-left: 1em;
+    padding-left: 1.5em;
     grid-area: filters;
 }
 
@@ -67,22 +67,28 @@ header {
 }
 
 /* image styles */
-#animal_col1 img {
-    max-width: 100px;
+img {
+    width: 150px;
+    height: 150px;
 }
 
-#animal_col2 img {
-    max-width: 100px;
+/* colulmn section styles */
+section[id^="animal_col"] {
+    align-items: center;
 }
 
-#animal_col3 img {
-    max-width: 100px;
+section[id^="animal_col"] div {
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
-#animal_col4 img {
-    max-width: 100px;
+/* filtered species styles */
+#filtered_animals {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
-#animal_col5 img {
-    max-width: 100px;
+#filterted_animals div {
+    text-align: center;
 }

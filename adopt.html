@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adopt</title>
+    <script src="javascript/species_filter.js" defer></script>
     <link rel="stylesheet" href="adopt.css">
     <link rel="stylesheet" href="footer.css">
 </head>
@@ -13,16 +14,19 @@
     </header>
     <section id="filters">
         <h5>Species</h5>
-        <input type="checkbox" id="dogs" name="dogs" value="dogs">
+        <input type="checkbox" id="dogs" name="dogs" value="dog">
         <label for="dogs">Dogs</label><br>
 
-        <input type="checkbox" id="cats" name="cats" value="cats">
+        <input type="checkbox" id="cats" name="cats" value="cat">
         <label for="cats">Cats</label><br>
 
-        <input type="checkbox" id="birds" name="birds" value="birds">
+        <input type="checkbox" id="birds" name="birds" value="bird">
         <label for="birds">Birds</label><br>
 
-        <input type="checkbox" id="rodents" name="rodents" value="rodents">
+        <input type="checkbox" id="rabbits" name="rabbits" value="rabbit">
+        <label for="rabbits">Rabbits</label><br>
+
+        <input type="checkbox" id="rodents" name="rodents" value="rodent">
         <label for="rodents">Rodents</label><br>
 
         <input type="checkbox" id="other" name="other" value="other">
@@ -30,104 +34,95 @@
     </section>
     
     <section id="animal_col1">
-        <img src="photos/adopt/dog1.jpeg"> <br>
-        Flower <br>
-        Breed: Chow <br>
-        Female <br>
-        5 Years <br>
+        <div data-species="dog">
+            <img src="photos/adopt/dog1.jpeg"> <br>
+            <p>Flower <br> Breed: Chow <br> Female <br> 5 Years <br> </p>
+        </div>    
 
-        <img src ="photos/adopt/cat1.jpeg"> <br>
-        Chester <br>
-        Breed: Ragamuffin <br>
-        Male <br>
-        2 Years <br>
+        <div data-species="cat">
+            <img src ="photos/adopt/cat1.jpeg"> <br>
+            Chester <br> Breed: Ragamuffin <br> Male <br> 2 Years <br>
+        </div>    
 
-        <img src ="photos/adopt/dog2.jpeg"> <br>
-        Stella <br>
-        Breed: Boerboel <br>
-        Female <br>
-        1 Year <br>
+        <div data-species="dog">
+            <img src ="photos/adopt/dog2.jpeg"> <br>
+            Stella <br> Breed: Boerboel <br> Female <br> 1 Year <br>
+        </div>
     </section>
 
     <section id="animal_col2">
-        <img src ="photos/adopt/dog3.jpeg"> <br>
-        Misty <br>
-        Breed: German Shepherd <br>
-        Female <br>
-        6 Years <br>
+        <div data-species="dog">
+            <img src ="photos/adopt/dog3.jpeg"> <br>
+            Misty <br>
+            Breed: German Shepherd <br>
+            Female <br>
+            6 Years <br>
+        </div>    
 
-        <img src ="photos/adopt/dog4.jpeg"> <br>
-        Shadow <br>
-        Breed: German Shepherd Mix <br>
-        Male <br>
-        8 Months <br>
+        <div data-species="dog">
+            <img src ="photos/adopt/dog4.jpeg"> <br>
+            Shadow <br> Breed: German Shepherd Mix <br> Male <br>8 Months <br>
+        </div>
 
-       <img src ="photos/adopt/cat2.jpeg"> <br>
-        Smokey <br>
-        Breed: Domestic Short Hair  <br>
-        Male <br>
-        5 Years <br>
+        <div data-species="cat">
+            <img src ="photos/adopt/cat2.jpeg"> <br>
+            Smokey <br> Breed: Domestic Short Hair  <br> Male <br> 5 Years <br>
+        </div>
     </section>
 
     <section id="animal_col3">
-        <img src ="photos/adopt/cat3.jpeg"> <br>
-            Daniel <br>
-            Breed: Domestic Short Hair <br>
-            Male <br>
-            5 Months <br>
+        <div data-species="cat">
+            <img src ="photos/adopt/cat3.jpeg"> <br>
+            Daniel <br> Breed: Domestic Short Hair <br> Male <br> 5 Months <br>
+        </div>
 
+        <div data-species="cat">
             <img src ="photos/adopt/cat4.jpeg"> <br>
-            Lily <br>
-            Breed: Domestic Short Hair  <br>
-            Female <br>
-            2 Months <br>
+            Lily <br> Breed: Domestic Short Hair  <br> Female <br> 2 Months <br>
+        </div>
 
+        <div data-species="rabbit">
             <img src ="photos/adopt/rabbit1.jpeg"> <br>
-            Toby <br>
-            Breed: Loop Eared <br>
-            Male <br>
-            4 Years <br>
+            Toby <br> Breed: Loop Eared <br> Male <br> 4 Years <br>
+        </div>    
     </section>
 
     <section id="animal_col4">
-        <img src ="photos/adopt/rabbit2.jpeg"> <br>
-            Stephanie <br>
-            Breed: American <br>
-            Female <br>
-            1 Month <br>
+        <div data-species="rabbit">
+            <img src ="photos/adopt/rabbit2.jpeg"> <br>
+            Stephanie <br> Breed: American <br> Female <br> 1 Month <br>
+        </div>
 
-        <img src ="photos/adopt/bird1.jpeg"> <br>
-        Sunshine <br>
-        Breed: Budgie <br>
-        Female <br>
-        11 Months <br>
-
-        <img src ="photos/adopt/bird1.jpeg"> <br>
-        Sadie <br>
-        Breed: Austalian Cattle Mix <br>
-        Female <br>
-        2 Years <br>
-
+        <div data-species="bird">
+            <img src ="photos/adopt/bird1.jpeg"> <br>
+            Sunshine <br> Breed: Budgie <br> Female <br> 11 Months <br>
+        </div>
+        
+        <div data-species="dog">
+            <img src ="photos/adopt/dog5.jpeg"> <br>
+            Sadie <br> Breed: Austalian Cattle Mix <br> Female <br> 2 Years <br> 
+        </div>
     </section>
 
     <section id="animal_col5">
-        <img src ="photos/adopt/hamster1.jpeg"> <br>
-            Tom <br>
-            Breed: Hamster <br>
-            Male <br>
-            1 Year <br>
+        <div data-species="rodent">
+            <img src ="photos/adopt/hamster1.jpeg"> <br>
+            Tom <br> Breed: Hamster <br> Male <br> 1 Year <br>
+        </div>
 
-        <img src ="photos/adopt/pig1.jpeg"> <br>
-        Benny <br>
-        Breed: Pot-Bellied Pig<br>
-        Male <br>
-        1 Year <br>
+        <div data-species="other">
+            <img src ="photos/adopt/pig1.jpeg"> <br>
+            Benny <br> Breed: Pot-Bellied Pig<br> Male <br> 1 Year <br> 
+        </div>
 
-        <img src ="photos/adopt/hamster2.jpeg"> <br>
-        George <br>
-        Breed: Hamster <br>
-        Male <br>
-        1 Year <br>
+        <div data-species="rodent">
+            <img src ="photos/adopt/hamster2.jpeg"> <br>
+            George <br> Breed: Hamster <br> Male <br> 1 Year <br>
+        </div>    
+    </section>
+
+    <section
+         id="filtered_animals" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
     </section>
     <footer>
         <a href="contact_us.html">Contact Us</a>
