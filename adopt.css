@@ -122,3 +122,35 @@ section[id^="animal_col"] div {
 #filterted_animals div {
     text-align: center;
 }
+
+/* checkbox styles */
+#dogs {
+    width: 30px;
+    height: 30px;
+}
+
+#cats {
+    width: 30px;
+    height: 30px;
+}
+
+#birds {
+    width: 30px;
+    height: 30px;
+}
+
+#rabbits {
+    width: 30px;
+    height: 30px;
+}
+
+#rodents {
+    width: 30px;
+    height: 30px;
+}
+
+#other {
+    width: 30px;
+    height: 30px;
+}
+
