@@ -1,0 +1,14 @@
+/* universal styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+/* body styles */
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 1.1em;
+}
