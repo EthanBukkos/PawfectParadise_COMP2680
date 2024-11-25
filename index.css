@@ -8,7 +8,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
     grid-template-areas: 
         "header header header"
         "text-body text-body video"
@@ -17,7 +17,7 @@ body {
     gap: 1rem;
     font-family: Arial, sans-serif;
     font-size: 1.1em;
-    background-image: url("photos/background.jpg");
+    background-image: url("photos/background_lessOpacity.jpg");
 }
 
 /* grid-layout styles */
@@ -35,6 +35,7 @@ header {
 
 .text-body {
     grid-area: text-body;
+    color: black;
     align-self: start;
     padding-top: 1.5rem;
     padding-left: 2rem;
@@ -77,10 +78,11 @@ header h1 {
 
 #navList a {
     text-decoration: none;
+    color: white;
 }
 
 #navList a:visited {
-    color: black;  
+    color: white;  
 }
 
 #navList a:hover {
