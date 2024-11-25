@@ -1,8 +1,60 @@
-<!DocType html>
+<!DOCTYPE html>
 <html>
+
 <head>
-    <title>Online Form</title>
+    <title>Adopt today!</title>
+    <link href="online_form.css" rel="stylesheet">
 </head>
+
 <body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form-container">
+            <h1>Adoption Application</h1>
+            <img src="photos/adopt_image.jpeg" alt="Adopt a Pet" class="form-image">
+            <p class="form-intro">Please fill out the form below:</p>
+
+        <form id="adoption">
+            <div class="form-group">
+                <label for="name"> First & Last Name:<span class="required">*</span> </label>
+                <input type="text" id="name" name="name" placeholder="First & Last name" required>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="phone"> Phone Number:* </label>
+                <input type="tel" id="phone" name="phone" placeholder="(xxx)-xxx-xxxx" required>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="email"> Email:* </label>
+                <input type="email" id="email" name="email" placeholder="email@email.com" required>
+            </div>
+
+
+            <div class="form-actions">
+                <button type="reset" class="btn reset-btn ">Reset</button>
+                <button type="submit" class="btn submit-btn">Submit</button>
+            </div>
+
+        </form>
+        </section>
+    </main>
+    <footer>
+        <a href="contact_us.html">Contact Us</a>
+        <a href="about_us.html">About Us</a>
+    </footer>
+
 </body>
+
 </html>
