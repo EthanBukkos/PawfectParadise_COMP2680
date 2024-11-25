@@ -11,4 +11,29 @@ body {
     height: 100vh;
     font-family: Arial, sans-serif;
     font-size: 1.1em;
+    background-image: url("photos/background_lessOpacity.jpg");
+}
+
+/* header styles */
+header h1 {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header a:active {
+    color: white;
+}
+
+header a:visited {
+    color: white;
+}
+
+header a:hover {
+    color: orange;
 }

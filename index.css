@@ -22,17 +22,6 @@ body {
 
 /* grid-layout styles */
 
-header {
-    grid-area: header;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-}
-
-#side_spacer {
-    grid-area: side;
-
-}
-
 .text-body {
     grid-area: text-body;
     color: black;
