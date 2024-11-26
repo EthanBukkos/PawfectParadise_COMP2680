@@ -12,6 +12,19 @@ body {
     font-family: Arial, sans-serif;
     font-size: 1.1em;
     background-image: url("photos/background_lessOpacity.jpg");
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: ; */
+    grid-template-areas: "header header"
+                         "addStory browseStories";
+}
+
+/* grid styles */
+#add_adoption_story {
+    grid-area: addStory;
+}
+
+#browse_stories_h2 {
+    grid-area: browseStories;
 }
 
 /* header styles */
