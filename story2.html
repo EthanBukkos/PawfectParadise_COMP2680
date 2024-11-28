@@ -1,23 +1,58 @@
-<!DocType html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community Story</title>
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="story1.css">
     <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="story2.css">
-<head>
-<head>
-<head>
+</head>
 <body>
-    <header><h1>Community Stories</h1>
-        <h3><a href="index.html">Home</a></h3>
-    </header>
 
-    <footer>
-        <a href="contact_us.html">Contact Us</a>
-        <a href="about_us.html">About Us</a>
-    </footer>
+<div class="container">
+    <h1>Community Stories</h1>
+    <hr>
+    <div class="content">
+        <div class="text-body">
+            <p>Meet Willow! I am so glad we adopted her! My family thought we'd never get another cat, but when we met
+                Willow we instantly loved her. Thank you, Pawfect Paradise!</p>
+        </div>
+        <div class="image">
+            <img src="photos/story_pics/story2_pic.jpeg" alt="Cat Image">
+        </div>
+    </div>
+
+    <!-- Button and Comments Dropdown -->
+    <div class="comments-container">
+        <button class="show-comments-btn" onclick="toggleComments()">Click to Show Comments</button>
+        <div class="comments-section" id="commentsSection">
+            <label for="comments">Comments</label>
+            <select id="comments">
+                <option>Comment 1</option>
+                <option>Comment 2</option>
+                <option>Comment 3</option>
+            </select>
+            <input type="text" placeholder="Add Comment">
+        </div>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer>
+    <a href="#contact">Contact Us</a>
+    <a href="#about">About Us</a>
+</footer>
+
+<script>
+    function toggleComments() {
+        const commentsSection = document.getElementById('commentsSection');
+        if (commentsSection.style.display === 'none' || commentsSection.style.display === '') {
+            commentsSection.style.display = 'block';
+        } else {
+            commentsSection.style.display = 'none';
+        }
+    }
+</script>
+
 </body>
 </html>
