@@ -18,18 +18,23 @@ body {
         "footer footer footer";
     gap: 1rem;
     font-family: Arial, sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
     background-image: url("photos/background_lessOpacity.jpg");
 }
 
 /* grid-layout styles */
 
-.text-body {
+.wrapper {
     grid-area: text-body;
-    color: black;
-    align-self: start;
     padding-top: 1.5rem;
     padding-left: 2rem;
+    text-align: center;
+}
+
+.wrapper p {
+    background-color: rgba(0147,112,219, 0.5);
+    border-style: outset;
+    border-color: rgba(0147,112,219, 0.5);
 }
 
 .video {
