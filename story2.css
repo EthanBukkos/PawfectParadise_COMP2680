@@ -1,0 +1,12 @@
+/* universal styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image: url("photos/background_lessOpacity.jpg");
+}   
