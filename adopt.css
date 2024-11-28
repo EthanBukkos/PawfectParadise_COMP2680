@@ -1,3 +1,5 @@
+/* Code written by Ethan Bukkos T00230826 */
+
 /* universal styles */
 * {
     margin: 0;
@@ -11,7 +13,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: .2rem;
+    grid-gap: 0.2rem;
     grid-template-areas: 
         "header header header header header header"
         "filters animal_col1 animal_col2 animal_col3 animal_col4 animal_col5"
@@ -47,8 +49,6 @@ header a:visited {
 header a:hover {
     color: orange;
 }
-
-
 
 #filters {
     padding-left: 1.5em;

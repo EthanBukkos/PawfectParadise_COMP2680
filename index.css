@@ -1,3 +1,5 @@
+/* Code written by Ethan Bukkos */
+
 /* universal styles */
 * {
     margin: 0;
@@ -61,8 +63,7 @@ header h1 {
 
 #navList li {
     display: inline-block;
-    padding-right: 1em;
-    padding-left: 1em;
+    width: 20%;
 }
 
 #navList a {
