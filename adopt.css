@@ -20,7 +20,7 @@ body {
         "filters animal_col1 animal_col2 animal_col3 animal_col4 animal_col5";
     grid-template-rows: .3fr 1fr 1fr 1fr 1fr;
     font-family: Arial, sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
     background-image: url("photos/background_lessOpacity.jpg");
 }
 

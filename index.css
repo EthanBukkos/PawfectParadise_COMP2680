@@ -9,14 +9,14 @@
 /* body styles */
 body {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 0.2fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr minmax(250px, 2fr);
+    grid-template-rows: auto;
     grid-template-areas: 
         "header header header"
         "text-body text-body video"
         "text-body text-body photos"
         "footer footer footer";
-    gap: 1rem;
+    grid-gap: 1rem;
     font-family: Arial, sans-serif;
     font-size: 1em;
     background-image: url("photos/background_lessOpacity.jpg");
@@ -35,6 +35,7 @@ body {
     background-color: rgba(0147,112,219, 0.5);
     border-style: outset;
     border-color: rgba(0147,112,219, 0.5);
+    min-width: 7em;
 }
 
 .video {
@@ -113,4 +114,36 @@ img.enlarged {
 p {
     font-size: 1.8em;
     font-family: Arial, sans-serif;
+}
+
+/* adopt dropdown list styles */
+#dropdown_list {
+    position: relative;
+
+}
+
+#dropdown_list_content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    /* left and tranform rule ensure the menu is directly below 'Adopt' */
+    transform: translateX(-50%); 
+    left: 50%;
+    background-color: orange;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100px;
+    text-align: left;
+}
+
+#dropdown_list_content li {
+    padding: 10px 20px;
+    cursor: pointer; /* cursor becomes a pointer when it hovers over item */
+    width: 100%; /* set to 100% so the hover rule highlights the whole word */
+    box-sizing: border-box; /* this prevents the hover highlight from extending beyond the dropdown menu */
+}
+
+#dropdown_list_content li:hover {
+    background-color: rgb(234, 239, 44, 0.6);
 }
