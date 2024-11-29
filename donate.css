@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-weight: bold;
+    clear: both;
 }
 
 /* body styles */
@@ -35,3 +36,30 @@ header a:visited {
 header a:hover {
     color: orange;
 }
+
+/* slider styles */
+
+#donation_section {
+    overflow: hidden;
+    
+}
+#donation_section .slider_container{
+    border-style: solid ; /* temp */
+    width: fit-content;
+    float: left;
+}
+
+#donation_section .slider {
+    width: 100%;
+    cursor: pointer;
+}
+
+#donation_section .text_body {
+    background-color: rgba(0147,112,219, 0.5);
+    width: fit-content;
+    float: left;
+}
+
+
+
+
