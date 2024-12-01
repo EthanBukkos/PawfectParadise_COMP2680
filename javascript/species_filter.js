@@ -45,3 +45,47 @@ checkboxes.forEach(function (checkbox) {
         }
     });
 });
+
+function directToAdopt(species) {
+    window.location.href = `adopt.html?species=${species}`;
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const species = urlParams.get("species");
+
+function filterAnimalBySpecies(selectedSpecies) {
+    const allAnimals = document.querySelectorAll("[data-species]");
+    const columns = document.querySelectorAll('section[id^="animal_col"]');
+
+    columns.forEach(function (column) {
+        column.innerHTML = "";
+    });
+
+    const matchingSpecies = Array.from(allAnimals).filter(function (animal) {
+        return !selectedSpecies || animal.dataset.species === selectedSpecies;
+    });
+
+    matchingSpecies.forEach(function (animal, index) {
+        const columnIndex = index % columns.length;
+        const clone = animal.cloneNode(true);
+        columns[columnIndex].appendChild(clone);
+    });
+}
+
+    if (species) {
+        filterAnimalBySpecies(species);
+
+        const checkbox = document.querySelector(`#filters input[value="${species}"]`);
+        if (checkbox) checkbox.checked = true;
+    }
+    
+    const checkboxes = document.querySelectorAll('#filters input[type="checkbox"]');
+    checkboxes.forEach(function (checkbox) {
+        checkbox.addEventListener("change", function() {
+            const selectedCheckbox = document.querySelector('#filters input[type="checkbox"]:checked');
+            const selectedSpecies = selectedCheckbox ? selectedCheckbox.value : null;
+            filterAnimalBySpecies(selectedSpecies); 
+        });
+    });
+});
