@@ -1,8 +1,96 @@
 <!DocType html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link href="header.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+    <link href="contact_us.css" rel="stylesheet">
+
 </head>
 <body>
+    <header>
+        <h1> Contact Us</h1>
+        <a href="index.html">Home</a>
+    </header>
+    <main>
+        <div class="container">
+         <!-- Contact information-->
+         <section id="contact_details" class="contact">
+            <div class="address-box">
+				<div class="address"><h3>Address</h3></div>
+				<p><strong>Pawfect Paradise</strong><br>809, McGill Road,<br>Kamloops</p>
+			</div>
+            <div class="phone-box">
+				<div class="phone"><h3>Phone</h3></div>
+				<p>Phone : <a href="tel:6042352999">(604)-235-2999</a></p>
+                <div class="e_phone"></div>
+				<p>Emergency Phone : <a href="tel:6042352323">(604)-235-2323</a></p>
+			</div>
+            <div class="email-box">
+				<div class="email"><h3>Email</h3></div>
+				<p>Email : <a href="mailto:info@pawfectparadise.ca">info@pawfectparadise.ca</a></p>
+			</div>
+         </section>
+        <!-- Business Hours table-->
+        <section id="business_hours">
+            <table class="table_hours">
+                <tr>
+                    <th colspan="2" class="table_header">Business Hours</th>
+                </tr>
+                <tr>
+                    <th>Monday</th>
+                    <td>9:00 AM - 8:00PM</td>
+                </tr>
+                <tr>
+                    <th>Tuesday</th>
+                    <td>9:00 AM - 8:00PM</td>
+                </tr>
+                <tr>
+                    <th>Wednesday</th>
+                    <td>9:00 AM - 8:00PM</td>
+                </tr>
+                <tr>
+                    <th>Thursday</th>
+                    <td>9:00 AM - 8:00PM</td>
+                </tr>
+                <tr>
+                    <th>Friday</th>
+                    <td>9:00 AM - 8:00PM</td>
+                </tr>
+                <tr>
+                    <th>Saturday</th>
+                    <td>10:00 AM - 6:00PM</td>
+                </tr>
+                <tr>
+                    <th>Sunday</th>
+                    <td>Closed</td>
+                </tr>
+            </table>
+        </section>
+
+         <!-- Form for the inquiry-->
+          <section id="inquire_form">
+            <form id="contact_form" class="contact_form">
+                <h3> Inquire About Adoption</h3>
+                <p>Fill out the form below: </p>
+                    <label for="name"> First & Last Name:<span class="required">*</span> </label>
+                    <input type="text" id="name" name="name" placeholder="First & Last name" required>
+                    <br>
+                    <label for="phone"> Phone Number:* </label>
+                    <input type="tel" id="phone" name="phone" type="tel" placeholder="(xxx)-xxx-xxxx" required minlength="10" >
+                    <br>
+                    <label for="email"> Email:* </label>
+                    <input type="email" id="email" name="email" placeholder="email@email.com" required>
+                    <br>
+                    <button type="submit" class="btn submit-btn">Submit</button>
+            </form>
+          </section>
+        </div>
+    </main>
+    <footer>
+        <a href="about_us.html">About Us</a>
+    </footer>
 </body>
 </html>
