@@ -28,7 +28,7 @@ body {
 /* grid-layout styles */
 
 footer {
-    grid-area: footer
+    grid-area: footer;
 }
 
     /* header styles*/
