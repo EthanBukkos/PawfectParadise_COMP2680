@@ -45,7 +45,8 @@ header a:hover {
     width: 450px;
     margin: 0px auto;
     font-size: 1em;
-    background-color:rgba(255, 255, 255, 0.9);
+    background-color:hsla(20, 68%, 94%, 0.664);
+    /*background-color:rgba(255, 255, 255, 0.9);*/
     border-collapse: collapse;
     
 }
@@ -87,7 +88,8 @@ th {
 #contact_details .address-box,
 #contact_details .phone-box,
 #contact_details .email-box {
-    background-color: rgba(0147,112,219, 0.5); 
+    background-color: rgba(240, 209, 223, 0.5); 
+   /* background-color: rgba(0147,112,219, 0.5); */
     border: 1px solid #ddd; 
     border-radius: 8px; 
     padding: 15px; 
