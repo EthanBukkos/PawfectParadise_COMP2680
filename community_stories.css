@@ -17,7 +17,7 @@ body {
 
 .wrapper{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 150px 1fr;
     grid-template-rows: auto auto auto auto auto auto auto auto;
     grid-template-areas:"header header"
                         "addStory browseStories"
@@ -27,6 +27,7 @@ body {
                         "img4 story4"
                         "img5 story5"
                         "footer footer";
+    gap: 2rem;
 
 }
 
@@ -127,9 +128,9 @@ header a:hover {
 
 /* img styles */
 .wrapper img {
-    width: 200px;
+    width: 150px;
     height: auto;
-    padding-left: 44%;
-    padding-top: 3rem;
+    padding: 1rem;
+    display: block;
 }
 
