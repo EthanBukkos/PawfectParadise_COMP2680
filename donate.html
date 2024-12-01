@@ -1,8 +1,41 @@
 <!DocType html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate</title>
+    <link rel="stylesheet" href="donate.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="copyright_text.css">
 </head>
 <body>
+    <header>
+        <h1>Donate</h1>
+        <h3><a href="index.html">Home</a></h3>
+    </header>
+
+    <section id = donation_section>
+
+        <div class="text_body">
+            <p>
+                Your donation helps us provide care for the animals while they await their forever homes!
+            </p>
+        </div>
+
+        <div class="slider_container">
+            <input type="range" min="0" max="100" value="0" step="10" class="slider" id="range_slider">
+            <p><span id="slider_value">$0</span></p>
+        </div>
+
+    </section>
+   <footer>
+        <a href="contact_us.html">Contact Us</a>
+        <a href="about_us.html">About Us</a>
+        <p id="copyright_text">&copy; <span id="year"></span> Pawfect Paradise. All rights reserved.</p>
+    </footer>
+
+    <script src="javascript/slider.js"></script>
+    <script src="javascript/copyright_year.js"></script>
 </body>
 </html>

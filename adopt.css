@@ -1,7 +1,10 @@
+/* Code written by Ethan Bukkos T00230826 */
+
 /* universal styles */
 * {
     margin: 0;
     padding: 0;
+    font-weight: bold;
 }
 
 /* body styles */
@@ -10,25 +13,41 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: .2rem;
+    grid-gap: 0.2rem;
     grid-template-areas: 
         "header header header header header header"
         "filters animal_col1 animal_col2 animal_col3 animal_col4 animal_col5"
         "filters animal_col1 animal_col2 animal_col3 animal_col4 animal_col5";
     grid-template-rows: .3fr 1fr 1fr 1fr 1fr;
     font-family: Arial, sans-serif;
-    font-size: 1.1em;
-    background-color: #E5AA70;
+    font-size: 1em;
+    background-image: url("photos/background_lessOpacity.jpg");
 }
 
 /* grid-layout styles */
-header {
+
+    /* header styles*/
+header h1 {
     text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    border: solid; /* temp */
-    grid-area: header;
-   
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header a:active {
+    color: white;
+}
+
+header a:visited {
+    color: white;
+}
+
+header a:hover {
+    color: orange;
 }
 
 #filters {
@@ -92,3 +111,35 @@ section[id^="animal_col"] div {
 #filterted_animals div {
     text-align: center;
 }
+
+/* checkbox styles */
+#dogs {
+    width: 30px;
+    height: 30px;
+}
+
+#cats {
+    width: 30px;
+    height: 30px;
+}
+
+#birds {
+    width: 30px;
+    height: 30px;
+}
+
+#rabbits {
+    width: 30px;
+    height: 30px;
+}
+
+#rodents {
+    width: 30px;
+    height: 30px;
+}
+
+#other {
+    width: 30px;
+    height: 30px;
+}
+

@@ -1,3 +1,5 @@
+<!-- Code written by Ethan Bukkos -->
+
 <!DocType html>
 <html>
 <head>
@@ -6,47 +8,67 @@
   <title>Home</title>
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="copyright_text.css">
 </head>
 <body>
   <header>
     <h1>Pawfect Paradise Animal Adoption Centre</h1>
-    <hr>
+    <p>Your One-Stop Platform for Pet Care and Adoption</p>
     <nav>
       <ul id="navList">
-        <li><h3><a href="adopt.html">Adopt</a></h3></li>
+        <li id="dropdown_list">
+          <h3><a href="adopt.html">Adopt</a></h3>
+
+          <ul id="dropdown_list_content">
+            <li>Dogs</li>
+            <li>Cats</li>
+            <li>Birds</li>
+            <li>Rabbits</li>
+            <li>Rodents</li>
+            <li>Other</li>
+          </ul>
+
+        </li>
+
         <li><h3><a href="donate.html">Donate</a></h3></li>
+         <li><h3><a href="community_stories.html">Adoption Stories</a></h3></li>
       </ul>
     </nav>
-    <hr>
   </header>
-  <main>
-    <article class="text-body">
+  
+  <div class="wrapper"> 
       <p>
-        Welcome to <strong>Pawfect Paradise!</strong> <br>
-        We are an animal adoption centre based in Kamloops, BC.
+        <b>Welcome to <strong>Pawfect Paradise!</strong> <br><br>
+        We are an animal adoption centre based in <strong>Kamloops, BC</strong>.
         Browse adoption oppurtunities online and submit your adoption form today!
-        From dogs and cats to lizards and birds, we find homes for all kinds of critters!
+        From dogs and cats to lizards and birds, we find homes for all kinds of critters!</b>
       </p>
-    </article>
-  </main>
-
-  <figure class="video">
-    <video controls src="videos/Stray Dogs Family told Shelter to JUST KEEP HER, then this happened.. - Rocky Kanaka (720p, h264, youtube).mp4">
-      Your browser does not support the video format
-    </video>
-  </figure>
-
-  <section class="photos">
+  </div>
     
-    <img id="photo1" src="photos/homepage_img1.HEIC" alt="Photo 1">
-    <img id="photo2" src="photos/homepage_img2.HEIC" alt="Photo 2">
+ 
+
+    <figure class="video">
+      <video controls src="videos/Stray Dogs Family told Shelter to JUST KEEP HER, then this happened.. - Rocky Kanaka (720p, h264, youtube).mp4">
+        Your browser does not support the video format
+      </video>
+    </figure>
+
+    <section class="photos">
     
-    <script src="javascript/enlargImg.js"></script>
-  </section>
+      <img id="photo1" src="photos/homepage_img1.HEIC" alt="Photo 1">
+      <img id="photo2" src="photos/homepage_img2.HEIC" alt="Photo 2">
+    
+      <script src="javascript/enlargImg.js"></script>
+    </section>
 
   <footer>
   <a href="contact_us.html">Contact Us</a>
   <a href="about_us.html">About Us</a>
+  <p id="copyright_text">&copy; <span id="year"></span> Pawfect Paradise. All rights reserved.</p>
   </footer>
+  
+  <script src="javascript/dropdown_menu.js"></script>
+  <script src="javascript/copyright_year.js"></script>
 </body>
 </html>

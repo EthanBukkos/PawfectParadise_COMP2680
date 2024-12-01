@@ -1,8 +1,200 @@
-<!DocType html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>About Us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Your Pet Adoption Platform</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
+  <style>
+    :root {
+      --primary-color: #8B4513;
+      --secondary-color: #CD7F32;
+      --accent-color: #DEB887;
+      --text-color: #3E2723;
+      --background-color: #FFF8E1;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+      /* background-color: var(--background-color); */
+      background-image: url("photos/background_lessOpacity.jpg");
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* header {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 2em 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    } */
+
+    /* header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    } */
+
+    /* header p {
+      margin: 10px 0 0;
+      font-size: 1.2em;
+    } */
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      flex: 1;
+    }
+
+    h2, h3 {
+      color: var(--primary-color);
+      margin-top: 0;
+    }
+
+    .section {
+      background-color: white;
+      border-radius: 8px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-5px);
+    }
+
+    .highlight {
+      color: var(--secondary-color);
+      font-weight: bold;
+    }
+
+    .what-we-do {
+      background-color: var(--accent-color);
+      color: var(--text-color);
+    }
+
+    .what-we-do h2, .what-we-do h3 {
+      color: var(--primary-color);
+    }
+
+    .what-we-do .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .what-we-do .text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .what-we-do .image {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .what-we-do .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--primary-color);
+      color: white;
+    } */
+
+    @media (max-width: 768px) {
+      .what-we-do .content {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Pawfect Paradise</h1>
+    <p>Your One-Stop Platform for Pet Care and Adoption</p>
+    <h3><a href="index.html">Home</a></h3>
+  </header>
+
+  <div class="container">
+    <section class="section about">
+      <h2>About Us</h2>
+      <p>
+        Founded in <span class="highlight">2024</span>, we are one of the Canada's largest and most trusted network of pet care and adoption services. 
+        Whether you need in-home pet grooming, boarding, training, or are looking to give a stray pet a forever home, we're here to help you at every step.
+      </p>
+      <p>
+        Our goal is to ensure that every pet receives the love, care, and family they deserve. 
+        From supporting NGOs and rescue shelters to rehoming abandoned pets, we work tirelessly to make a difference.
+      </p>
+    </section>
+
+    <section class="section mission">
+      <h2>Our Mission</h2>
+      <p>
+        At <span class="highlight">Pawfect Paradise</span>, we believe in providing a second chance to animals in need. Our primary focus is on:
+      </p>
+      <ul>
+        <li>Rehoming orphaned, abandoned, and homeless pets with loving families.</li>
+        <li>Supporting pet parents with affordable and reliable care solutions.</li>
+        <li>Collaborating with shelters and NGOs to provide meals, medical aid, and other essentials.</li>
+      </ul>
+    </section>
+
+    <section class="section what-we-do">
+      <h2>What We Do</h2>
+      <div class="content">
+        <div class="text">
+          <p>
+            Pawfect Paradise' primary mission is to find forever loving families and homes for animals in need. We home/rehome orphaned, abandoned, homeless cats and dogs from the streets after providing them with state-of-the-art private medical care to ensure a hassle-free experience for both adopters and pets.
+          </p>
+          <h3>In Addition</h3>
+          <ul>
+            <li>Educate adopter families on the importance of sterilization.</li>
+            <li>Regularly follow up with adopters to ensure the well-being of the pets adopted from us.</li>
+            <li>Treat injured animals and release them back into their territories. If they cannot survive on their own, we get them adopted.</li>
+            <li>Facilitate rehoming and adoption of animals in areas of low adoption rates.</li>
+          </ul>
+          <p>
+            Over the last year, our team has successfully homed 70+ pups, kittens, and dogs, including several blind, deaf, and handicapped animals. Together, we are making a difference one pet at a time.
+          </p>
+        </div>
+        <div class="image">
+          <img src="images/mobi.jpeg" alt="my dog" style="height:520px">
+        </div>
+      </div>
+    </section>
+
+    <section class="section why-adopt">
+      <h2>Why Adopt?</h2>
+      <p>
+        Adopting a pet not only changes their life but yours too. By choosing adoption, you're saving a life and making room for other animals in need. Plus, you'll gain a loyal friend who will shower you with unconditional love and happiness.
+      </p>
+      <p>
+        Join us in making a difference! Let's give every stray and homeless pet the chance to find a home, safety, and the love they deserve.
+      </p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Adopt Us. All rights reserved. Together, we can make a difference!</p>
+  </footer>
 </body>
 </html>

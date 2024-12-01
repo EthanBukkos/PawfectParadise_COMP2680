@@ -1,0 +1,135 @@
+/* Code written by Ethan Bukkos T00230826 */
+
+/* universal styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+/* body styles */
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image: url("photos/background_lessOpacity.jpg");
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-areas:"header header"
+                        "addStory browseStories"
+                        "img1 story1"
+                        "img2 story2"
+                        "img3 story3"
+                        "img4 story4"
+                        "img5 story5"
+                        "footer footer";
+
+}
+
+.wrapper p {
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: rgb(234, 239, 44, 0.6);
+    
+}
+
+/* grid styles */
+
+#add_adoption_story {
+    grid-area: addStory;
+    padding-left: 35%;
+    font-size: 1.5rem;
+}
+
+#browse_stories_h2 {
+    grid-area: browseStories;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+#story1 {
+    grid-area: story1;
+    padding-right: 5rem;
+}
+
+#story2 {
+    grid-area: story2;
+    padding-right: 5rem;
+}
+
+#story3 {
+    grid-area: story3;
+    padding-right: 5rem;
+}
+
+#story4 {
+    grid-area: story4;
+    padding-right: 5rem;
+}
+
+#story5 {
+    grid-area: story5;
+    padding-right: 5rem;
+}
+
+#story1_img {
+    grid-area: img1;
+    padding-right: 5rem;
+}
+
+#story2_img {
+    grid-area: img2;
+    padding-right: 5rem;
+}
+
+#story3_img {
+    grid-area: img3;
+    padding-right: 5rem;
+}
+
+#story4_img {
+    grid-area: img4;
+}
+
+#story5_img {
+    grid-area: img5;
+}
+
+
+
+/* header styles */
+header h1 {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header a:active {
+    color: white;
+}
+
+header a:visited {
+    color: white;
+}
+
+header a:hover {
+    color: orange;
+}
+
+/* img styles */
+.wrapper img {
+    width: 200px;
+    height: auto;
+    padding-left: 44%;
+    padding-top: 3rem;
+}
+

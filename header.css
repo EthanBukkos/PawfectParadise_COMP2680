@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    background-color: rgba(0147,112,219, 0.7);
+    color: white;
+    margin-bottom: 1em;
+    grid-area: header;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+   
+}
+
+header h1 {
+    padding-bottom: .1rem;
+}
+
+header p { 
+   font-size: 1rem;
+   padding-bottom: .9rem;
+}
