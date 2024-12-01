@@ -153,3 +153,7 @@ section[id^="animal_col"] div {
     height: 30px;
 }
 
+/* citation styles */
+#citations li {
+    font-size: 0.6rem;
+}

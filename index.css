@@ -178,13 +178,17 @@ p {
 }
 
 #countdown_timer p {
-    font-size: 1.5em;
-    margin-bottom: 0.5rem;
+    font-size: 1.6em;
+    margin-bottom: 0.7rem;
     border-radius: 15px;
 }
 
 #timer {
     font-size: 2em;
     font-weight: bold;
-    color: #0470db;
+    color: blueviolet;
+}
+
+#citations li{
+    font-size: 0.9rem;
 }
