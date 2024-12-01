@@ -9,13 +9,14 @@
 /* body styles */
 body {
     display: grid;
-    grid-template-columns: 1fr minmax(250px, 2fr);
+    grid-template-columns: 1fr 3fr;
     grid-template-rows: auto;
     grid-template-areas: 
-        "header header header"
-        "text-body text-body video"
-        "text-body text-body photos"
-        "footer footer footer";
+        "header header"
+        "text-body text-body"
+        "timer video"
+        "timer photos"
+        "footer footer";
     grid-gap: 1rem;
     font-family: Arial, sans-serif;
     font-size: 1em;
@@ -41,6 +42,7 @@ body {
 .video {
     grid-area: video;
     padding: 1.5rem;
+    margin: auto;
 }
 .video video {
     max-width: 600px;
@@ -51,6 +53,13 @@ body {
 .photos {
     grid-area: photos;
     padding: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: auto;
+}
+
+.photos img {
+    max-width: 100%;
 }
 
 header {
@@ -102,14 +111,13 @@ header h1 {
     max-width: 300px;
     width: 100%;
     height: auto;
-    /* margin-bottom: 8em; */
+    opacity: 0.8;
 }
 
 #photo2 {
     max-width: 300px;
     width: 100%;
-    height: auto;
-    /* margin-bottom: 8em; */
+    opacity: 0.8;
     
 }
 
@@ -154,4 +162,29 @@ p {
 
 #dropdown_list_content li:hover {
     background-color: rgb(234, 239, 44, 0.6);
+}
+
+/* countdown timer styles */
+#countdown_timer {
+    grid-area: timer;
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: hsla(62, 86%, 55%, 0.6);
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    margin: auto;
+    height: fit-content;
+}
+
+#countdown_timer p {
+    font-size: 1.5em;
+    margin-bottom: 0.5rem;
+    border-radius: 15px;
+}
+
+#timer {
+    font-size: 2em;
+    font-weight: bold;
+    color: #0470db;
 }
