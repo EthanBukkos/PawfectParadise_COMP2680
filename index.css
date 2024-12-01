@@ -53,6 +53,14 @@ body {
     padding: 1.5rem;
 }
 
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
 /* header styles */
 header h1 {
     text-align: center;

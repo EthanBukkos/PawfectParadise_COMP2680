@@ -10,15 +10,16 @@
 /* body styles */
 body {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 0.2rem;
     grid-template-areas: 
         "header header header header header header"
         "filters animal_col1 animal_col2 animal_col3 animal_col4 animal_col5"
-        "filters animal_col1 animal_col2 animal_col3 animal_col4 animal_col5";
-    grid-template-rows: .3fr 1fr 1fr 1fr 1fr;
+        "filters animal_col1 animal_col2 animal_col3 animal_col4 animal_col5"
+        "footer footer footer footer footer footer";
+    grid-template-rows: auto 1fr auto;
     font-family: Arial, sans-serif;
     font-size: 1em;
     background-image: url("photos/background_lessOpacity.jpg");
@@ -26,7 +27,16 @@ body {
 
 /* grid-layout styles */
 
+footer {
+    grid-area: footer
+}
+
     /* header styles*/
+
+header {
+    grid-area: header;
+}
+
 header h1 {
     text-align: center;
     padding-top: 1em;
