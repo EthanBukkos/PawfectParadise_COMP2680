@@ -104,6 +104,9 @@ input[type="email"] {
     border-radius: 5px;
     box-sizing: border-box;
 }
+input:focus {
+    background-color: aquamarine;
+}
 
 /* Buttons */
 .form-actions {
