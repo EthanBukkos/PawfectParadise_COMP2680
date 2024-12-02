@@ -9,7 +9,22 @@
     <link href="header.css" rel="stylesheet">
     <link href="copyright_text.css" rel="stylesheet">
 </head>
+<script>
+    window.onload = function () {
+      const params = new URLSearchParams(window.location.search);
+      const imgSrc = params.get("img");
 
+      if (imgSrc) {
+        const imgElement = document.createElement("img");
+        imgElement.src = imgSrc;
+        imgElement.alt = "Selected Animal";
+        imgElement.style.maxWidth = "200px";
+
+        const container = document.getElementById("animal-image");
+        container.appendChild(imgElement);
+      }
+    };
+  </script>
 <body>
     <header>
         <h1>Adopt today!</h1>
@@ -18,7 +33,9 @@
     <main>
         <section class="form-container">
             <h1>Adoption Application</h1>
-            <img src="photos/adopt_image.jpeg" alt="Adopt a Pet" class="form-image">
+            <div id="animal-image">
+                <!-- Animal image will be dynamically added here -->
+            </div>
             <p class="form-intro">Please fill out the form below:</p>
 
         <form id="adoption">
@@ -31,7 +48,7 @@
 
             <div class="form-group">
                 <label for="phone"> Phone Number:* </label>
-                <input type="tel" id="phone" name="phone" placeholder="(xxx)-xxx-xxxx" required>
+                <input type="tel" id="phone" name="phone" placeholder="(xxx)-xxx-xxxx" required minlength="10">
             </div>
 
             <br>
