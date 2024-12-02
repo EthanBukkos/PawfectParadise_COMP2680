@@ -1,26 +1,24 @@
 /* Code written by Ethan Bukkos */
 
-/* universal styles */
-* {
-    margin: 0;
-    padding: 0;
-}
-
 /* body styles */
 body {
+    margin: 0;
+    padding: 0;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: auto;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas: 
-        "header header"
-        "text-body text-body"
-        "timer video"
-        "timer photos"
-        "footer footer";
+        "header header header"
+        "text-body text-body video"
+        "timer timer video"
+        "timer timer photos"
+        "footer footer footer";
     grid-gap: 1rem;
     font-family: Arial, sans-serif;
     font-size: 1em;
     background-image: url("photos/background_lessOpacity.jpg");
+    text-align: center;
+    min-height: 100vh;
 }
 
 /* grid-layout styles */
@@ -30,6 +28,7 @@ body {
     padding-top: 1.5rem;
     padding-left: 2rem;
     text-align: center;
+    font-size: 1em;
 }
 
 .wrapper p {
@@ -37,7 +36,9 @@ body {
     border-style: outset;
     border-color: rgba(0147,112,219, 0.5);
     min-width: 7em;
+    border-radius: 15px;
 }
+
 
 .video {
     grid-area: video;
@@ -58,10 +59,6 @@ body {
     margin: auto;
 }
 
-.photos img {
-    max-width: 100%;
-}
-
 header {
     grid-area: header;
 }
@@ -70,9 +67,16 @@ footer {
     grid-area: footer;
 }
 
+footer #citations {
+    padding-top: 1em;
+}
+
+footer #copyright_text {
+    margin-top: 0.5em;
+}
+
 /* header styles */
 header h1 {
-    text-align: center;
     color: white;
     padding-bottom: 1em;
     padding-top: 1em;
@@ -81,7 +85,6 @@ header h1 {
 /* navigation list styles */
 #navList {
     list-style-type: none;
-    text-align: center;
 }
 
 #navList li {
@@ -107,29 +110,15 @@ header h1 {
 }
 
 /* photo styles */
-#photo1 {
+#photo1, #photo2 {
     max-width: 300px;
-    width: 100%;
+    width: 80%;
     height: auto;
-    opacity: 0.8;
-}
-
-#photo2 {
-    max-width: 300px;
-    width: 100%;
-    opacity: 0.8;
-    
+    /* opacity: 0.8; */
 }
 
 img.enlarged {
     transform: scale(2);
-}
-
-
-/* paragraph styles */
-p {
-    font-size: 1.8em;
-    font-family: Arial, sans-serif;
 }
 
 /* adopt dropdown list styles */
@@ -167,13 +156,13 @@ p {
 /* countdown timer styles */
 #countdown_timer {
     grid-area: timer;
-    text-align: center;
     margin-top: 1.5rem;
+    margin-left: 2rem;
     padding: 1rem;
     background-color: hsla(62, 86%, 55%, 0.6);
+    border-style: outset;
     border-radius: 10px;
-    font-family: Arial, sans-serif;
-    margin: auto;
+    /* margin: auto; */
     height: fit-content;
 }
 
@@ -181,6 +170,7 @@ p {
     font-size: 1.6em;
     margin-bottom: 0.7rem;
     border-radius: 15px;
+    font-weight: bold;
 }
 
 #timer {
