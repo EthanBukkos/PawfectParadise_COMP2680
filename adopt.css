@@ -1,14 +1,10 @@
 /* Code written by Ethan Bukkos T00230826 */
 
-/* universal styles */
-* {
+/* body styles */
+body {
     margin: 0;
     padding: 0;
     font-weight: bold;
-}
-
-/* body styles */
-body {
     width: 100vw;
     min-height: 100vh;
     display: grid;
@@ -29,6 +25,7 @@ body {
 
 footer {
     grid-area: footer;
+    
 }
 
     /* header styles*/
@@ -69,16 +66,8 @@ header a:hover {
     grid-area: animal_col1;
 }
 
-#animal_col1 img {
-
-}
-
 #animal_col2 {
     grid-area: animal_col2;
-}
-
-#animal_col2 img {
-
 }
 
 #animal_col3 {
